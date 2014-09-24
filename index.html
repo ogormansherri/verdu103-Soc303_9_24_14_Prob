@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soc 303 Probability</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Soc 303 Probability">
+  <meta name="author" content="Sherri Verdugo, M.S.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Soc 303 Probability</h1>
+    <h2>Supplemental Class Notes</h2>
+    <p>Sherri Verdugo, M.S.<br/>Instructor, CSUF</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Administration Items</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Homework 1 is due Next Monday!</li>
+<li>Today, we are covering Probability, Hypothesis, and Research Methods (briefly!)</li>
+<li>You will have lab time again to work on your homework....keep working on it :)</li>
+<li>Next Week: Chapters 7 and 8 :)</li>
+<li>Keep working on the research part of your drafts.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Probability Key Concepts</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Experiment: process by which an observation (or measurement) is obtained.</li>
+<li>Simple Event: the outcome that is observed on a single repetition of the experiment.</li>
+<li>Event: collection of simple events.</li>
+<li>Mutually Exclusive: when one event occurs, the other cannot, and vice versa.</li>
+<li>S: set of all simple events.</li>
+<li>Probability of an event <em>A</em> is equal to the sum of the simple events contained in A.</li>
+<li>The <em>union</em> of events A and B, denoted by \(A \cup B\) = either A or B occurring.</li>
+<li>The <em>intersection</em> of events A and B, denoted by \(A \cap B\) = BOTH A AND B OCCUR.</li>
+<li>The <em>complement</em> of an event A = \(A^C\) ... where A does not occur!</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Key Concepts, continued</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Independent: Two events, A and B, are said to be <em>independent</em> if and only if the probability of event B is not influenced or changed by the occurrence of event A, or vice versa.</li>
+<li>Random Variable: A variable x is a <em>random variable</em> if the value that it assumes, corresponding to the outcome of an experiment, is a chance or random event.</li>
+<li>Experiment: process by which an observation or measurement is obtained.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Probability</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>In previous Chapters we introduced topics such as qualitative (Nominal and Ordinal) and quantitative (Interval and Ratio) variables. Today, we are talking about Discrete Random Variables and Their Probability Distributions. </li>
+<li>However, even qualitative variables can generate numerical data if the categories are numerically coded to form a scale. For example, if you toss a single coin, the qualitative outcome could be recorded as “0” if a head and “1” if a tail.</li>
+<li>We can record outcomes and describe the results using probability and statistics.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Concepts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>An experiment is the process by which an observation or measurement is obtained.</p>
+
+<p>Examples:</p>
+
+<ol>
+<li>Recording weight</li>
+<li>Recording vital signs in the E.R.</li>
+<li>Recording an opinion (yes or no)</li>
+<li>Toss two coins</li>
+<li>Values for a card</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Simple Events</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>These are the outcomes that are observed on a single repetition of the experiment. We can use a deck of cards to record values for probability and statistical purposes :)</p>
+
+<ul>
+<li>The basic element to which probability is applied.</li>
+<li>One and only one simple event can occur when the experiment is performed.</li>
+</ul>
+
+<p>A simple event is denoted by E with a subscript. \(E_a\).</p>
+
+<p>Each simple event will be assigned a probability, measuring “how often” it occurs. 
+The set of all simple events of an experiment is called the  sample space, S.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>TOSSING A COIN</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Outcome</th>
+<th>Frequency</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>\(E_{Head}\)</td>
+<td>number</td>
+</tr>
+<tr>
+<td>\(E_{Tail}\)</td>
+<td>number</td>
+</tr>
+</tbody></table>
+
+<p>S = {\(E_{Head}\), \(E_{Tail}\)}</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Events</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A collection of simple events. For example a deck of cards.</p>
+
+<ul>
+<li>\(\heartsuit\) Hearts: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace</li>
+<li>\(\clubsuit\) Clubs: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace</li>
+<li>\(\spadesuit\) Spades: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace</li>
+<li>\(\diamondsuit\) Diamonds: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace</li>
+</ul>
+
+<p>Total Cards = 52 (26 Black and 26 Red)</p>
+
+<p>Basic probability without replacement for a red queen (think Alice in Wonderland):</p>
+
+<p><img src="redqueen.jpeg" alt="width"></p>
+
+<p>P(Red) = 26/52 or ½ , P(Queen) is 4/52 or 1/13 so P(Red and Queen) = ½ * 1/13 = 1/26</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Probability of an Event</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The probability of an event A is found by adding the probabilities of all the simple events contained in A. </p>
+
+<ul>
+<li>We can find probabilities by using:
+
+<ul>
+<li>Estimates from empirical studies</li>
+<li>Common sense estimates based on equally likely events</li>
+</ul></li>
+<li>Coin Toss: P(Head) = 1/2 = .50 = 50%</li>
+<li>10% of a sample have red hair: P(Red Hair) = 10% = .10</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>For this class</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You will not be required to know probability theory, rather, you will be asked to engage in probability techniques through statistical analysis. This is a back story. Statistics is built on the probability that your hypotheses are set up in such a way, that you can see the probability that you accept or reject the null in favor of the alternative.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Brief Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In a certain population, 10% of the people can be classified as being high risk for a heart attack. Three people are randomly selected from this population. What is the probability that exactly one of the three are high risk?</p>
+
+<ul>
+<li>Let P = Probability and Set up definitions:
+
+<ul>
+<li>H = high risk and N = not high risk</li>
+</ul></li>
+<li>Set up the events:
+
+<ul>
+<li>P(H) = .10 </li>
+<li>P(N) = .90</li>
+</ul></li>
+<li>Math: P(H) + P(N) = 1.0 --&gt; .10 + .90 = 1.00 :)
+
+<ul>
+<li>P(exactly one high risk) = P(HNN) + P(NHN) + P(NNH)</li>
+<li>= P(H)P(N)P(N) + P(N)P(H)P(N) + P(N)P(N)P(H)</li>
+<li>= (.1)(.9)(.9) + (.9)(.1)(.9) + (.9)(.9)(.1)= 3(.1)(.9)2 = .243</li>
+</ul></li>
+<li>Answer: 0.243</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Next Week</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Homework one is due: 9/29/14 Monday</li>
+<li>Chapter 7: Statistical Inference</li>
+<li>Chapter 8: Probability -- z and t test</li>
+<li>Keep working on your writing drafts...research and documentation</li>
+<li>Homework two will be released on 10/06</li>
+<li>Midterm exam: 10/22/14 </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Administration Items'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Probability Key Concepts'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Key Concepts, continued'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Probability'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Concepts'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Simple Events'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='TOSSING A COIN'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Events'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='The Probability of an Event'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='For this class'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Brief Example'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Next Week'>
+         12
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,153 @@
+---
+title       : Soc 303 Probability 
+subtitle    : Supplemental Class Notes
+author      : Sherri Verdugo, M.S.
+job         : Instructor, CSUF
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Administration Items
+
+1. Homework 1 is due Next Monday!
+2. Today, we are covering Probability, Hypothesis, and Research Methods (briefly!)
+3. You will have lab time again to work on your homework....keep working on it :)
+4. Next Week: Chapters 7 and 8 :)
+5. Keep working on the research part of your drafts.
+
+--- .class #id 
+
+## Probability Key Concepts
+
+* Experiment: process by which an observation (or measurement) is obtained.
+* Simple Event: the outcome that is observed on a single repetition of the experiment.
+* Event: collection of simple events.
+* Mutually Exclusive: when one event occurs, the other cannot, and vice versa.
+* S: set of all simple events.
+* Probability of an event *A* is equal to the sum of the simple events contained in A.
+* The *union* of events A and B, denoted by $A \cup B$ = either A or B occurring.
+* The *intersection* of events A and B, denoted by $A \cap B$ = BOTH A AND B OCCUR.
+* The *complement* of an event A = $A^C$ ... where A does not occur!
+
+--- .class #id
+
+## Key Concepts, continued
+
+* Independent: Two events, A and B, are said to be *independent* if and only if the probability of event B is not influenced or changed by the occurrence of event A, or vice versa.
+* Random Variable: A variable x is a *random variable* if the value that it assumes, corresponding to the outcome of an experiment, is a chance or random event.
+* Experiment: process by which an observation or measurement is obtained.
+
+--- .class #id
+
+## Probability 
+
+* In previous Chapters we introduced topics such as qualitative (Nominal and Ordinal) and quantitative (Interval and Ratio) variables. Today, we are talking about Discrete Random Variables and Their Probability Distributions. 
+* However, even qualitative variables can generate numerical data if the categories are numerically coded to form a scale. For example, if you toss a single coin, the qualitative outcome could be recorded as “0” if a head and “1” if a tail.
+* We can record outcomes and describe the results using probability and statistics.
+
+--- .class #id
+
+## Concepts
+
+An experiment is the process by which an observation or measurement is obtained.
+
+Examples:
+
+1. Recording weight
+2. Recording vital signs in the E.R.
+3. Recording an opinion (yes or no)
+4. Toss two coins
+5. Values for a card
+
+--- .class #id
+
+## Simple Events
+
+These are the outcomes that are observed on a single repetition of the experiment. We can use a deck of cards to record values for probability and statistical purposes :)
+
+* The basic element to which probability is applied.
+* One and only one simple event can occur when the experiment is performed.
+
+A simple event is denoted by E with a subscript. $E_a$.
+
+Each simple event will be assigned a probability, measuring “how often” it occurs. 
+The set of all simple events of an experiment is called the  sample space, S.
+
+--- .class #id
+
+## TOSSING A COIN
+
+Outcome     | Frequency
+------------|----------
+$E_{Head}$  | number
+$E_{Tail}$  | number
+
+S = {$E_{Head}$, $E_{Tail}$}
+
+--- .class #id
+
+## Events
+
+A collection of simple events. For example a deck of cards.
+
+* $\heartsuit$ Hearts: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace
+* $\clubsuit$ Clubs: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace
+* $\spadesuit$ Spades: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace
+* $\diamondsuit$ Diamonds: King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, Ace
+
+Total Cards = 52 (26 Black and 26 Red)
+
+Basic probability without replacement for a red queen (think Alice in Wonderland):
+
+![width](redqueen.jpeg)
+
+P(Red) = 26/52 or ½ , P(Queen) is 4/52 or 1/13 so P(Red and Queen) = ½ * 1/13 = 1/26
+
+--- .class #id
+
+## The Probability of an Event
+
+The probability of an event A is found by adding the probabilities of all the simple events contained in A. 
+
+* We can find probabilities by using:
+    * Estimates from empirical studies
+    * Common sense estimates based on equally likely events
+* Coin Toss: P(Head) = 1/2 = .50 = 50%
+* 10% of a sample have red hair: P(Red Hair) = 10% = .10
+
+--- .class #id
+
+## For this class 
+
+You will not be required to know probability theory, rather, you will be asked to engage in probability techniques through statistical analysis. This is a back story. Statistics is built on the probability that your hypotheses are set up in such a way, that you can see the probability that you accept or reject the null in favor of the alternative.
+
+--- .class #id
+
+## Brief Example
+In a certain population, 10% of the people can be classified as being high risk for a heart attack. Three people are randomly selected from this population. What is the probability that exactly one of the three are high risk?
+
+* Let P = Probability and Set up definitions:
+    * H = high risk and N = not high risk
+* Set up the events:
+    * P(H) = .10 
+    * P(N) = .90
+* Math: P(H) + P(N) = 1.0 --> .10 + .90 = 1.00 :)
+    * P(exactly one high risk) = P(HNN) + P(NHN) + P(NNH)
+    * = P(H)P(N)P(N) + P(N)P(H)P(N) + P(N)P(N)P(H)
+    * = (.1)(.9)(.9) + (.9)(.1)(.9) + (.9)(.9)(.1)= 3(.1)(.9)2 = .243
+* Answer: 0.243
+
+--- .class #id
+
+## Next Week
+
+* Homework one is due: 9/29/14 Monday
+* Chapter 7: Statistical Inference
+* Chapter 8: Probability -- z and t test
+* Keep working on your writing drafts...research and documentation
+* Homework two will be released on 10/06
+* Midterm exam: 10/22/14 
