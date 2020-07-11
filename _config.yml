@@ -1,0 +1,8 @@
+title: Verdu103-soc303 9 24 14 prob
+description: "Probability: Basic for Soc 303 @ CSUF"
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
